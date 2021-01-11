@@ -1,17 +1,33 @@
 # Sidebar navigation
 
-- label: 'Introduction'
-  link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
+- label: "Introduction"
+  link: "/"
+- label: Getting Started
+  items:
+    - label: "How To Purchase RAM Token (Uniswap V2)"
+      link: "getting-started/getting-started"
+- label: Ram Token
+  items:
+    - label: "Whitepaper"
+      link: "ram-token/white-paper"
+    - label: "Torrent"
+      link: "ram-token/torrent"
+    - label: "The Responsive Dollar"
+      link: "ram-token/the-responsive-dollar"
+    - label: "A better Stablecoin"
+      link: "ram-token/a-better-stablecoin"
+    - label: "Injection Offering(IO)"
+      link: "ram-token/injection-offering"
+    - label: "Test Paper"
+      link: "ram-token/test-paper"
 - label: Usage
   items:
-    - label: 'Creating docs'
-      link: '/usage/creating-docs'
-    - label: 'Navigation'
-      link: '/usage/navigation'
-    - label: 'Shadowing'
-      link: '/usage/shadowing'
+    - label: "Creating docs"
+      link: "/usage/creating-docs"
+    - label: "Navigation"
+      link: "/usage/navigation"
+    - label: "Shadowing"
+      link: "/usage/shadowing"
 - label: More
   items:
     - label: FAQ
@@ -20,5 +36,5 @@
       link: /changelog
 - label: Community
   items:
-    - label: 'Github'
+    - label: "Github"
       link: https://github.com/rocketseat/gatsby-themes
