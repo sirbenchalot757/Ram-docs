@@ -2,3 +2,546 @@
 title: Whitepaper
 description: Understanding how to use Ramifi's Torrent
 ---
+
+### Ramifi, ​ An Improved Synthetic Commodity
+
+_November 11​th​, 2020_
+
+Download the whitepaper [here](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-MLTV3O0o155b7QOWxym%2F-MMIP7jwJ3VwB2WsZLKA%2F-MMIQTDJS81oH8JpTyIP%2FRamifi%20Whitepaper.pdf?alt=media&token=fc16057d-7e77-4f94-ac6e-7c5e950baa91)
+
+### Abstract
+
+Synthetic commodities are a recent type of digital asset with many unique applications.
+They have proven to be robust and uncorrelated with existing financial instruments. As such,
+there are many latent potential uses for synthetic commodities in terms of value attribution.
+Ramifi takes a unique approach to synthetic commodity value attribution by utilizing a
+dynamically weighted basket of commodities to discern the dollar's purchasing power. This
+approach accurately accounts for inflation in real-time and allows users to better understand
+their underlying assets' real purchasing power.
+
+### 1 Introduction
+
+Commodities are defined as physical goods with economic value, such as gold, corn, or crude oil. These
+commodities have intrinsic value in society and often serve as the core building blocks for our global
+economy. Commodities vary in liquidity and often use derivative instruments as forward pricing
+mechanisms to achieve a more significant price stability level.
+
+This asset class has absolute scarcity, meaning there exists a limited amount at any given time. It is
+possible to mine more gold or grow additional corn, but this process takes time, and the asset remains
+scarce due to its immediate limited supply. Commodities also have nonmonetary use – corn can be eaten,
+oil processed, and gold minted. The additional nonmonetary uses make commodities an imperfect tool for
+backing money (Goodspeed 2018).
+
+The advent of the internet and near-instant digital communications has allowed for the development of
+synthetic commodities, which exist entirely in digital form (Selgin 2015). These assets have absolute
+scarcity but no nonmonetary value. Their lack of physical representation means that they have no
+secondary use care impacting how they are priced. This sole use case, in turn, makes them more viable
+candidates for use in monetary backing and financial instruments.
+
+_Figure 1.1_
+
+_Absolute scarcity and non-monetary use are the two primary factors when considering how to back a monetary
+supply using a secondary asset (Goodspeed 2018)._
+
+The significance of this recent development is striking – starting with Bitcoin's development, an entirely
+new alternative asset class has arisen. Synthetic commodities are uncorrelated with other market
+instruments such as stocks, bonds, and physical commodities. Nonetheless, synthetic commodities remain
+positively correlated with one another (Liu & Tsyvinski 2018).
+
+The absolute scarcity and lack of nonmonetary value have led to significant volatility in the synthetic
+commodity asset class, partly due to their recent invention and partly due to the increasing capital inflows
+to the asset class. Volatility naturally invites speculation on future value, and thus Bitcoin has evolved in
+recent years into a store of value rather than a monetary instrument. There exists a significant demand for
+synthetic assets that allow for both speculation, as is the case with Bitcoin, yet remain relatively constant
+in price.
+
+Ramifi is an improved synthetic commodity that seeks to facilitate relative price stability while also
+accommodating the fluctuating capital inflows associated with this new asset class. The protocol
+accomplishes this using dynamic supply adjustments that account for the elastic demand associated with
+synthetic commodities. Adjustments are periodic and are weighted relative to a basket of commodities.
+The relatively stable value allows for more optimal price discovery between synthetic commodities and
+existing monetary regimes. As fiat currencies' purchasing power continues to erode, real-time data
+regarding purchasing power and investment returns of synthetic commodities will continue to increase in
+importance. Ramifi provides a straightforward solution to this demand.
+
+### 2 Inflation
+
+Inflation is a persistent force in any monetary system. Inflation can be generally conceptualized in the
+following way, when economic expansion outpaces the rate of inflation, the purchasing power of the
+currency rises – when inflation outpaces the rate of economic growth, the purchasing power of the
+currency falls. Regardless of what backing a currency has, inflation must be accounted for as accurately
+as possible to discern money's actual purchase power. As the world economy increases in nuance, the
+need for accurate metrics on purchasing power and inflation becomes ever more vital.
+
+This importance is true for both hard monetary systems and fiat currency regimes. A hard monetary
+system is backed by a scarce commodity, such as gold, and leverages this commodities scarcity to support
+its value. Historically all hard monetary systems have been backed by physical commodities, the most
+popular being gold. While a future currency may elect to utilize a synthetic commodity such as Bitcoin to
+support its monetary system, humanity has yet to see such a development.
+
+In contrast to this backing by a scarce resource, fiat currency systems' purchasing power is backed by the
+issuer's full faith and credit (Ferguson 2008). Faith and credit are intangible and non-scare, thus allowing
+for more flexible fiscal and monetary policies. While flexible monetary policy is beneficial for central
+planners, checks and balances must be in place to assure that currency issuance does not outstrip the rate
+of inflation by a large margin. In 1971 the US dollar transitioned from a hard monetary system to a fiat
+currency system. This transition resulted in a significant shift for the US dollar's inflation rate and its
+calculation, resulting in the absolute purchasing power of the currency decreasing and the overall supply
+of currency increasing drastically.
+
+_Figure 2.1_
+
+_The available money supply has continued to increase at a rapid pact since the great financial crisis of 2008. This
+increasing rate highlights the disconnect between the rates of expansion in the money supply and increases in
+economic activity._
+
+Both hard monetary and fiat currency regimes experience inflation, albeit at different rates. Historically,
+gold was the commodity of choice for backing money. The rate at which gold is mined roughly correlates
+with the global economy's expansion – ​approximately 2% per year​. For this reason, gold was the best
+solution for monetary backing in the 19​th​ century but has become increasingly antiquated as technology
+has evolved. As previously mentioned, the non-monetary value of money, its physically cumbersome
+form, and asymmetrical gold deposits worldwide make the commodity an increasingly poor candidate for
+monetary backing.
+
+Following the Second World War, there arose a dire need for a more globalized monetary system to avoid
+the intense cycles of economic booms and busts while rebuilding the global economy. This need resulted
+in the Bretton-Woods system in which the US dollar was chosen as the world's reserve currency and
+pegged to the price of gold at $35 per ounce. While still utilizing gold for relative stability, the global
+monetary system began to rely more on dollars. The liquid nature of dollars enabled a swift economic
+recovery and demonstrated greater robustness than the previously heterogeneous monetary regimes. Gold
+was falling out of favor as a monetary backing and began experiencing elevated dollar-denominated price
+volatility levels.
+
+The United States abandoned the gold standard in 1971, and the dollar became a full fiat currency. This
+transition allowed for massive economic expansion at the cost of the dollar's overall consumer purchasing
+power. While this had stunningly positive consequences for the average global citizen in the short term,
+these positive developments are threatened by the erosion of the dollar's purchasing power. The US dollar
+has ​lost over 84% of its purchasing power​ since 1971 and continues to erode at an accelerating rate,
+threatening future economic progress.
+
+_Figure 2.2_
+
+_The real purchasing power of the US dollar has rapidly decreased since the 1920s, losing over 84% of its purchasing power. Fiscal stimulus is experiencing increasingly diminishing returns. _
+
+There is a dire need to accurately track the rate of inflation and clarify the role of synthetic commodities
+in future global monetary policy. The question of how long the US dollar can persist as the world's
+reserve currency is a hotly contested topic. While there is speculation as to what currency may replace the
+US dollar, no fiat alternative serves as a viable candidate. The role of synthetic commodities will
+invariably play an increasingly important role in global monetary policy and backing.
+
+### 3 Dollar Denominated Synthetic Commodities
+
+#### 3.1 Tether
+
+Tether was the first successful project that sought to connect the value of the US dollar to the new
+alternative asset class of synthetic commodities. The nominal rate of Tether is pegged to the dollar
+through the issuance and destruction of existing Tether tokens. While initially claiming to be fully backed
+by US dollars held in an escrow account, Tether now admits that its dollar peg is artificially maintained.
+While historically stable, this synthetic commodity has seen rampant speculation regarding its origins and
+future. Tether issuances' opaque nature exposes the synthetic commodity to potential fraud while
+subjecting users to credit and business risk of the issuer.
+
+#### 3.2 Maker Dao
+
+In terms of distributed governance, Maker Dao was the first synthetic commodity to launch a soft pegged
+token to the US dollar. Other synthetic commodities such as Bitcoin and Ethereum are staked as collateral
+in the Maker ecosystem. The distributed algorithm then utilizes risk parameter analysis to establish
+interest rates on subsequent loans against these assets. This process establishes a collateralized debt
+position, also referred to as a CDP. On top of the established interest rate, CDPs are collectively used as
+collateral to maintain Dai's stable peg to the dollar. Supply is dynamically adjusted relative to demand,
+with these fluctuations being reflected in the cost of loans against CDP positions. This innovative
+approach decentralized the mechanisms that control the stablecoin's supply but expose holders to credit
+risk within the ecosystem as the stable rate is predicated on an ecosystem of collateralized loans.
+
+#### 3.3 Ampleforth
+
+Improving upon the concept of a synthetic commodity pegged to the dollar, Ampleforth has made great
+strides in tracking dollar value and demand using decentralized financial applications. Independent of
+credit risks associated with loan ecosystems, the Ampleforth token's sole purpose is to provide a stable
+dollar peg that dynamically adjusts relative to user demand. The impact of the fluctuating supply of
+dollar-pegged tokens is passed directly to the user, thereby allowing for a stable nominal rate while
+accounting for user demand in a more flexible manner. In the event of elevated demand, in which the
+price of one Ampleforth token will increase, the US dollar peg is enforced via distribution to users.
+Conversely, if demand declines and one Ampleforth token's price falls below one dollar, the total supply
+of tokens is decreased. This process impacts all token holders uniformly, assuring that proportional token
+ownership remains constant in the event of token recalibration. Additionally, this allows users of
+Ampleforth tokens to benefit from increased demand for tokens over time as their supply of tokens will
+increase proportionally to total demand. This process's results are desirably straightforward – rather than a
+fixed supply in which the nominal value of the asset fluctuating relative to demand, there is a fixed
+nominal value in which supply fluctuated relative to demand.
+
+#### 3.4 Ramifi
+
+Ramifi improves the mechanism established by the Ample protocol markedly. The Ramifi protocol
+discerns the dollar's actual purchasing power in the world economy and dynamically adjusts supply
+accordingly. Rather than accepting the dollar's nominal value at face value, Ramifi accounts for real-time
+dollar inflation by tracking a basket of dynamically weighted commodities. This tracking mechanism
+allows individuals to calculate the real rate of inflation, accurately track their returns on an investment
+relative to inflation and paves the way for a more seamless transition towards a future of decentralized
+financial applications and synthetic commodities.
+
+### 4 The Ramifi Protocol
+
+The Ramifi protocol's unique approach to the dollar's declining real purchasing power is critically
+important due to increasing inflation. Currently, consumer inflation is calculated using a metric known as
+the Consumer Price Index. Over time, this index's approach to calculating consumer inflation has changed
+drastically, having consistently been adjusted to demonstrate low inflation rates. The results of these
+miscalculations have been starting – rather than the nominal consumer inflation rate of roughly 1.4%, the
+actual rate of consumer inflation is likely somewhere around 10%. This large discrepancy helps to explain
+the increasing dissatisfaction of the average consumer as their currency's purchasing power continues to
+erode.
+
+_Figure 3.1_
+
+_The Consumer Price Index (CPI) is utilized by the US government to calculate the rate of consumer inflation. Due to
+systematic adjustments to how the CPI is calculated, the CPI has grown into an increasingly inaccurate
+measurement of real consumer inflation._
+
+Due to the miscalculated rate of inflation and the velocity of devaluation, Ramifi addresses the clear
+demand for a durable synthetic commodity that accurately tracks the world's largest fiat currency's real
+purchasing power. As digitization continues to occur rapidly, we believe that users will become
+increasingly aware of the rapidly declining purchasing power of their assets. For these reasons, the supply
+of Ram tokens will be continually adjusted at set intervals to reflect both fluctuating user demand as well
+as real-time changes to the purchasing power of the US dollar relative to a basket of dynamically
+weighted commodities.
+
+Ramifi utilizes blockchain technology to enforce protocol rules and assure a stable peg to the real
+inflation-adjusted dollar is maintained. The distributed nature of the protocol assures that no centralized
+actors can collude for their benefit at the network's expense. Blockchain technology also enables Ramifi
+to be a synthetic commodity by increasing the digital good's durability, shielding it from individual
+business or credit risk.
+
+Dynamic supply adjustments are also more easily handled using blockchain technology. The periodic
+checkpoints associated with blockchain allow for definitive points at which the market oracle provides
+data to the supply contract. Additionally, this process is fully transparent and can be audited from any
+outside actor using the Ethereum network.
+
+The growing interconnected ecosystem of decentralized finance, or defi, is empowering users to make
+informed decisions about utilizing their assets. As distributed systems continue to evolve as the dollar
+declines' purchasing power, the Ramifi protocol will serve as the interface for reliably tracking these
+trends.
+
+### 5 Balancing Algorithm
+
+The Ramifi algorithm seeks to achieve what it terms a ​ price-supply ​equilibrium, in which two simple
+rules are followed. If Ram trades above the target nominal exchange rate, then supply is increased and
+distributed to shareholders. If Ram trades below the target's nominal exchange rate, then the supply is
+decreased, and the shareholder stake diminishes proportionally.
+
+This balancing algorithm takes hyperbolic price movements into account by distributing tokens in
+proportion to Ram tokens' velocity of upward and downward price movement. It is important to note that
+Ram's price is always targeted at one inflation-adjusted US dollar in either event. Rather than the nominal
+rate, or price, of each Ample fluctuating, as is the case with other synthetic commodities such as Bitcoin,
+it is the underlying ​ supply ​ that fluctuates for Ram to maintain a stable dollar peg.
+
+Synthetic commodities have demonstrated greater demand elasticity than traditional asset classes. This
+elasticity is partly due to the recent nature of their creation, which results in comparatively low volumes
+relative to more established asset classes. Additionally, the entirely digital nature of synthetic
+commodities allows for near-instant transaction times in an environment absent of central market controls
+in traditional markets. Therefore, considerations regarding supply smoothing must be undertaken to avoid
+overcorrections that would inevitably result from period adjustments during times of high demand
+elasticity. Supply changes are actualized over a set period to avoid sudden and unnecessary instability in
+price. For example, if the price fluctuates to 1.5 RAM, 1 USD, a supply ​ increase ​ of 50% will occur
+uniformly over X number of days. Conversely, if the price fluctuates to 0.5 RAM, 1 USD, a supply
+decrease ​ will occur uniformly over X number of days.
+
+#### 5.1 Expansion, Contraction, and Equilibrium
+
+In an expansion, the supply of Ram will increase over the distribution period calculated by the market
+oracle. Rational actors will see this opportunity to sell Ram at a higher price before the supply actualizes
+and reinforces the supply adjustment.
+
+In a contraction, the supply of Ram will decrease over the distribution period calculated by the market
+oracle. This period presents to rational actors' the opportunity to acquire more Ram at a lower market
+price as the supply subsequently adjusts over the set period.
+
+Equilibrium is projected to be finite periods in the Ramifi protocol, punctuated by period adjustments of
+expansion and contraction. In equilibrium events, the supply remains unchanged and rational actors are
+presented with no immediate price arbitrage opportunity.
+
+These three states allow for the overall market cap of Ram to increase over time while assuring that the
+inflation-adjusted peg to the dollar remains intact.
+
+#### 5.2 Ramifi's Contributions
+
+Intaking real-time information regarding asset prices requires data arbitration. For this purpose, the
+Ramifi protocol utilizes a market oracle comprised of independent data providers. These providers are
+aggregated and weighted against one another relative to transaction volume, thereby allowing the most
+liquid market makers to impact price finality significantly. Some commodities experience more
+significant fluctuations relative to the US dollar.
+
+These fluctuations are accounted for by weighing their market cap, total volume, and other key metrics to
+ascertain the most accurate picture of the dollar's purchasing power. Additional market oracle parameters
+will account for high sigma events that might result in a bias interpretation of inflation-adjusted
+purchasing power.
+
+The initial adjustment schedule will calculate every 24 hours and is actualized over a set period of 30
+days. This approach allows for dynamic supply adjustments while avoiding large and sudden shifts in
+available supply. In the event of an outlier price event submitted to the market oracle, the Ramifi protocol
+will weigh the calculation in such a way to prevent disproportionate adjustments. For example, the price
+of oil futures contracts plunged into negative territory before subsequently adjusting to a more normal
+range in 2020. These sudden and unexpected price events that are quickly recovered from will be
+programmatically accounted for to avoid large changes in Ram price that are subsequently corrected when
+the underlying commodity returns to more reasonable price levels.
+
+By adjusting supply in response to demand, the Ramifi protocol utilizes countercyclical pressure to
+maintain price equilibrium. How supply adjusts will likely lead to market action distinct from existing
+synthetic commodities in which there are a relatively fixed supply and dynamic price. For this reason, a
+volatility fingerprint is used to track supply trends that result from periodic adjustments.
+
+As the market cap of the Ramifi protocol increases, there will be correlations between periodic
+adjustments and states of disequilibrium as the protocol enforces the US dollar peg. Subsequently, these
+disequilibrium periods will result in a price curve that trades relative to the exchange rate target as
+secondary markets seek to profit from periodic adjustments. In this way, rational actions work in
+synchronicity with the Ramifi protocol's period adjustments to maintain the inflation-adjusted dollar peg.
+
+Rational actors that act quickly have a window of opportunity to take advantage of supply adjustment
+periods, in which the price correction has not yet occurred. In the event of supply expansion, actors can
+sell their shares before the price reaches equilibrium. In the event of a supply contraction, actors can buy
+additional shares at a discount during the period of disequilibrium. With secondary market actors working
+in conjunction with periodic algorithmic adjustments, a financial incentive mechanism exists to reinforce
+Ram's dollar peg during periods of disequilibrium.
+
+### 6 Denominated Mean Calculation
+
+The pricing of commodities occurs using a system called futures contracts. To ensure that a given
+commodity's price is locked in at a set date, producers utilize the good buy contracts that guarantee
+delivery of the commodity on a specified date and a specified price. These futures contracts assist
+producers in accounting for price variations and ease financial accounting burden while utilizing a
+commodity that experiences daily price fluctuations. For example, a tortilla manufacturer might purchase
+a corn futures contract to lock in the price they will be paying to deliver that commodity. This stability
+protects both the company from a potential spike in corn prices and the commodity producer from the
+difficulties associated with finding a last-minute buyer.
+
+Futures contracts are incredibly liquid thanks to a robust secondary market in which speculators actively
+trade contracts before their expiration dates. This liquidity reinforces the underlying commodity price and
+facilitates an efficient method of price discovery for an otherwise cumbersome physical asset class. It is
+important to note that unlike options, futures come with the obligation that the contract holder take
+delivery of the underlying commodity at the contract's expiry date. For this reason, the time value of
+commodity futures contracts is a highly salient feature of the contract. As such, commodity futures
+contracts that are closer to their expiration date generally trade with less volatility than contracts that
+expire closer to the given date.
+
+The Ramifi Market Oracle tracks over 150 of the global market's most liquid commodities to assure that it
+represents the most accurate picture of inflation weighted US dollar purchasing power as possible.
+Illustrating this fact, the commodities that experience the most trading volume are more heavily weighted
+in by the oracle. For example, there are over 2 million open interest contracts of WTI, the world's most
+liquid crude oil futures contract sponsored by the Chicago Mercantile Exchange (CME), representing over
+$80 billion of speculative capital currently invested in crude oil.
+
+_Figure 6.1_
+
+_As the primary fuel source for our modern world, oil is the most liquid commodity traded today. Open interest oil
+contracts measure in the tens of billions of dollars at any given time._
+
+Crude oil is the most heavily traded community in the world by volume. The place of oil in the global
+economy is hard to overstate – it not only powers the technology that drives international trade but
+partially backed the world's reserve currency for several decades under a regime known as the
+petro-dollar. For this reason, Ramifi's approach to an inflation weighted dollar fixed to a volume-weighted
+index of commodities is new but echoes a historically proven approach.
+
+Corn is the second most traded commodity globally, helping to feed the world's growing population. With
+a ​compound annual growth rate of 5.3%​, the global market share of corn is set to outpace the US dollar's
+CPI by roughly three-fold. This preliminary data suggests that the dollar's purchasing power relative to
+corn will increase in the coming years. However, the miscalculation inherent to the CPI demonstrates the
+dire need for cross-correlation analysis. Ramifi's approach accomplishes this and will serve as a
+benchmark for discerning the real rate of dollar inflation and can be utilized as a reference tool against
+reweighted averages that attempt to gauge consumer inflation more accurately.
+
+Gold, despite its removal as the commodity of choice backing monetary supplies of various currencies,
+remains one of the most liquid commodities traded with futures contracts. It is a durable metal regularly
+used in electronics manufacturing. This commodity is also viewed as a store of value by individuals who
+remain skeptical of fiat currencies' consistent purchasing power. COMEX, one of the world's most
+popular exchanges trading gold futures contracts, has experienced record demand for physical delivery in
+the wake of the Covid-19 pandemic. The subsequent massive fiscal stimulus resulted in a heavily
+increased demand for physical possession of the precious metal, demonstrating the growing wariness
+surrounding the dollar's durable purchasing power and other currencies.
+
+_Figure 6.2_
+
+_Demand for physical delivery of gold has skyrocketed in 2020, highlighting growing fears surrounding the long term
+stability of fiat regimes around the world._
+
+Ramifi employs the world's top commodity futures contract exchanges and analyst companies to deliver a
+proprietary data feed to the market oracle. This diversity in information assures that the supply adjustment
+schedule is as accurate as possible, tracking the dollar's fluctuating purchasing power. Some of the
+exchanges and firms used to track real-time commodity price data accurately include,
+-Chicago Mercantile Exchange
+-Intercontinental Exchange
+
+- Open Data for Africa
+- Johnson Matthey
+- London Bullion Markets Association
+- London Metals Exchange
+- Organization of the Petroleum Exporting Countries
+- World Bank
+
+Some of the calculations that the Ramifi protocol uses to discern the value of futures contracts include,
+
+- Fertilizers Index
+- Food Index
+- Timber Index
+- Metals and minerals Index
+- Beverages Index
+- Energy Index
+- Non-energy commodities Index
+- Fats and oils Index
+- Agriculture Index
+- Grains Index
+- Raw materials Index
+- Other raw materials Index
+- Misc. food Indexes
+
+Let’s take a look at an example calculation,
+1 RAM is equal to 1 USD based on a 2020 USDs purchasing power. We accomplish this by
+looking at what 1 USD can purchase today in terms of major commodities across the globe and
+averaging them all together weighted by volume.
+
+Let's take a look at corn which is denominated in ​ bushels ​,
+
+> 1 ​ Bushel ​ = 115.21​ USD
+>
+> 1 ​ RAM ​ = 1/115 bushels
+>
+> = 0.008679 ​ Bushels ​ (​ pC ​1)
+
+This is then averaged against other commodities weighted by its global trade volume. So lets add another
+commodity gold which is denominated in troy ounces and goes for $1,951.50/troy ounce.
+
+> 1 ​ _RAM_ ​ = 1/1951 toz
+>
+> = 0.000512426 ​ toz ​ (​ pG ​1)
+
+Now if the price of corn went up 2% and the price of gold went up 5% the new RAM value would be an
+average of the two weighted by their daily volume.
+
+Corn's new price would be ​
+
+> 1/117.5142 = 0.008509 (​ pC ​2) ​
+> with a daily volume of ​
+> 439,357 (​ vC ​) ​ at 117.5142/​ bushel ​(​ pC ​2).
+
+If we stopped here 1 RAM would now equal 1.02 USD because (0.008679/0.008509 = 1.02).
+
+We aren't basing this on a single commodity. Additionally, gold's new price would be,
+
+1/2049.075 = 0.00049 (​ pG ​2), ​ with a daily volume of ​ 234,363 (​ vG ​)​ at ​ 2049.075/ ​ toz ​ ( ​ pG ​ 2) ​.
+
+> ((​ pC ​1/​ pC ​2) ∗ (​ vC ​∗​ pC ​2) + (​ pG ​1/​ pG ​2) ∗ (​ vG ​∗​ pG ​2)) >/ ((​ vC ​∗​ pC ​2) + (​ vG ​∗​ pG ​2)) ((​ pC ​1/​ pC ​2) _ (​ vC ​ _
+>
+> pC ​2) + (​ pG ​1/​ pG ​2) _ (​ vG ​ _ ​ pG ​2) ) / ((​ vC ​ _ ​ pC ​2) + (​ >vG ​ _ ​ pG ​2)) ((​ pC ​1/​ pC ​2) ∗ (​ vC ​∗​ pC ​2) +
+>
+> (​ pG ​1/​ pG ​2) ∗ (​ vG ​∗​ pG ​2)) / ((​ vC ​∗​ pC ​2) + (​ vG ​∗​ pG ​2)) =
+
+This equation gives us RAM’s new USD value being, **1.0471**
+
+### 7 Conclusion
+
+Synthetic commodities that track real-world values are already playing a vital role in the growing world
+of decentralized finance. Discerning the dollar's real rate of inflation allows us to price goods and services
+more accurately in the global economy. Ramifi accomplishes this by using a denominated mean that is
+calculated from over 150 commodities. Ramifi is dynamically weighted using transaction volumes and
+reflects the real purchasing power of the dollar.
+
+This insight is becoming increasingly valuable as fiat currencies' purchasing power continues to erode at
+an accelerating pace over time. For these reasons, Ramifi will play a central role in discerning the dollar's
+real purchasing power.
+
+### References
+
+[1] Ferguson, N. (2008). The Ascent of Money, A Financial History of the World. Penguin.
+[2] Goodspeed, T. (2018). “Kicking Away the Ladder? Cryptocurrencies in Historical Perspective.” Ap-
+plied History Volume (Working Paper).
+[3] Kue, E. Iles, B, and Cruz, M. (2019). “Ampleforth, ​ A New Synthetic Commodity ​.” Ampleforth
+
+Whitepaper available at, ​www.ampleforth.org/papers/
+[4] Liu, Y., and Tsyvinski, A. (2018). “Risk and Returns of Cryptocurrency.” National Bureau of Eco-
+nomic Research (Working Paper).
+[5] Nakamoto, S. (2009). “Bitcoin, A Peer-to-Peer Electronic Cash System.” Bitcoin White Paper
+available at, bitcoin.org/bitcoin.pdf
+[6] Selgin, G. (2015). “Synthetic Commodity Money.” Journal of Financial Stability.
+[7] Wood, G. (2014). “Ethereum, A secure decentralised generalised transaction ledger.” Ethereum
+Yellow Paper available at, ​gavwood.com/paper.pdf​.
+
+### Appendices
+
+#### 1 Software Architecture
+
+The Ramifi protocol is built on the Ethereum blockchain and maintains several touchpoints both within
+and outside the network. Outside of the Ethereum network, there are two primary participants in the
+protocol. The first of these external touchpoints is that of data providers. These third-party entities provide
+real-time market data parsed by the Ramifi market oracle and subsequently synthesized into the
+inflation-adjusted rate. The second external touchpoint category includes rational actors that exist in the
+form of secondary market participants. This groups' buying and selling of Ram tokens assist in
+maintaining the inflation-adjusted dollar peg.
+
+_Figure A.1_
+
+_The Ramifi protocol employs a number of external data sources which are dynamically weighted using the market
+oracle. This weighted information is used to calculate supply adjustments relative to the supply adjustment policy
+portion of the Ramifi smart contract._
+
+The Ramifi protocol utilizes the standard ERC-20 contract code. Additionally, it employs Ampleforth’s
+addition of the ​ rebase(uint256 epoch, int256 supplyDelta) ​function. This function instructs the contract
+holder to adjust the total supply and is callable by the ​ Supply Policy Contract ​.
+If ​ supplyDelta ​ is positive, existing holders are issued additional tokens that are created. If ​ supplyDelta ​ is
+negative, existing holders have a portion of their existing tokens removed.
+
+Executing individual transactions on the Ethereum blockchain for each supply adjustment would prove
+prohibitive. The Ramifi protocol adjusts balances internally using hidden internal denominations to
+circumvent this erroneous cost.
+
+The hidden internal denomination and the external denominations are controlled by an exchange rate
+equal to ​ hiddenSupply/uFragmentSupply ​, which results in the real conversion rate between the two.
+
+Achieving numerical stability in rounding presents a difficulty as the Solidity language does not support
+floating-point numbers. Therefore, when rounding, the Ramifi protocol follows a stricter version of the
+EU's currency conversion calculations guidelines.
+
+Conventional currency conversion systems allow for a miniscule amount of transactional discrepancy due
+to real-time conversion calculations' unavoidable nature. As in any conversional function ​ f ​ with a
+non-zero rounding error, ​ _f(x0)+f(x1)+...+f(xn) is not always equal to f(x0 + x1 + ... xn)._
+
+#### 2 Supply Policy
+
+The contract that dictates the Supply Policy uses the ​ rebase() ​ external function, but it is distinct from the
+identically named Ramifi ERC-20 ​ rebase() ​ function. Instead, it is a function that can be called by anyone
+and executes roughly every 24 hours. This function's openly callable nature allows rational market actors
+to react to supply adjustments independent of the core Ramifi team.
+
+The Market Oracle is first called to establish a current inflation-adjusted price of the dollar. If the oracle
+finds that the price is within the ​ priceTheshold ​ of the target, then no subsequent adjustments are made to
+Ram's supply. Conversely, if the ​ supplyDelta ​ is equal to ​ (price-target\*totalSupply/target ​ ), an adjustment
+occurs proportional to the price difference – for example. Suppose the price of inflation-adjusted dollars is
+calculated to be $1.10. In that case, a supply addition of 10% is created to account for the price
+discrepancy and return the base price to equilibrium.
+
+As mentioned, this process does not execute immediately but instead utilizes a time lag to assure a smooth
+return to equilibrium. The base time frame for this process is set for 30 days at the launch of the platform.
+Taken in conjunction with the above calculation, a 10% supply increase over a period of 30 days would
+result in (10%/30days) = 0.3.33% per day.
+
+Due to the asymmetrical nature of transactions on a blockchain, supply policy calculations will occur
+slightly more than 24 hours apart from one another. The Ampleforth protocol has calculated a variation of
+roughly one hour per year in their supply adjustment calculations. The Ramifi team is undertaking tests to
+account for this variation. One such approach includes a "bonus" calculation every 24 years; however, due
+to the significant time horizon associated with this procedure, any solution remains in the realm of
+speculation at the time of writing.
+
+#### 3 Market Oracle Contract
+
+The Ramifi market oracle draws data from a wide range of outside sources and interfaces with the Supply
+Policy contract. At each 24 hours calculation period, the supply dynamically adjusts relative to the
+inflation-adjusted dollar value. Only whitelisted sources can provide data to the market oracle at launch.
+The data used to calculate period adjustments will be weighted for high sigma events that would
+otherwise skew the dollar's inflation-adjusted value, thereby preserving the accuracy of the Ramifi
+protocols calculations.
+
+### Acknowledgments
+
+We would like to offer our sincerest gratitude to the Ampleforth team for their contributions to the field of
+synthetic commodities. Without their contributions the Ramifi project would not be possible. We look
+forward to building a robust ecosystem of synthetic commodities and digital assets for years to come.
+
+_“... If I have seen a little further it is by standing on the shoulders of giants.”_
+
+_- Isaac Newton_

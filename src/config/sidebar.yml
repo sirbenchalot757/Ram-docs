@@ -18,23 +18,9 @@
       link: "ram-token/a-better-stablecoin"
     - label: "Injection Offering(IO)"
       link: "ram-token/injection-offering"
-    - label: "Test Paper"
-      link: "ram-token/test-paper"
-- label: Usage
+- label: Additional Information
   items:
-    - label: "Creating docs"
-      link: "/usage/creating-docs"
-    - label: "Navigation"
-      link: "/usage/navigation"
-    - label: "Shadowing"
-      link: "/usage/shadowing"
-- label: More
-  items:
-    - label: FAQ
-      link: /faq
-    - label: Changelog
-      link: /changelog
-- label: Community
-  items:
-    - label: "Github"
-      link: https://github.com/rocketseat/gatsby-themes
+    - label: "What are commodities?"
+      link: "/additional-information/what-are-commodities"
+    - label: "What are synthetic commodities?"
+      link: "/additional-information/what-are-synthetic-commodities"
