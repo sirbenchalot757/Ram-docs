@@ -1,6 +1,6 @@
 # Sidebar navigation
 
-- label: "Introduction"
+- label: "What is Ramifi"
   link: "/"
 - label: Getting Started
   items:
