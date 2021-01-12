@@ -1,0 +1,36 @@
+---
+title: The Responsive Dollar
+description: How the protocol combats inflation.
+---
+
+1 RAM is equal to 1 USD based on a 2020 USDs purchasing power. We accomplish this by looking at what 1 USD can purchase today in terms of major commodities across the globe and averaging them all together weighted by volume.
+
+**Lets take a look at corn which is denominated in bushels.**
+
+> 1Bushel=115.21USD
+>
+> 1RAM=1/115.21=0.008679Bushels(pC1)
+
+**This is then averaged against other commodities weighted by its global trade volume. So lets add another commodity gold which is denominated in troy ounces and goes for $1,951.50/troy ounce.**
+
+> 1RAM=1/1951.50=0.000512426toz(pG1)
+
+**Now if the price of corn went up 2% and the price of gold went up 5% the new RAM value would be an average of the two weighted by their daily volume.**
+
+Corn's new price would be
+
+> 1/117.5142 = 0.008509(pC2)
+> with a daily volume of
+> 439,357(vC) @ 117.5142/bushel (pC2)
+
+_If we stopped here 1 RAM would now equal 1.02 USD because (0.008679/0.008509 = 1.02) We aren't basing this on a single commodity however._
+
+Golds new price would be
+
+> 1/2049.075 = 0.00049 (pG2)
+> with a daily volume of
+> 234,363 (vG) @ 2049.075/t oz (pG2)
+
+> ((pC1/pC2)∗(vC∗pC2)+(pG1/pG2)∗(vG∗pG2))/((vC∗pC2)+(vG∗pG2))
+
+**This equation gives us RAMs new USD value being 1.0471**
